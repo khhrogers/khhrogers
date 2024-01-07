@@ -20,12 +20,21 @@ body {
     margin:0;
     list-style: none;
     display:flex;
-    gap: 20rem;
+    gap: 10rem;
 }
 
-
+.site-title {
+    font-size:5rem;
+}
 
 .nav a{
     color: inherit;
 }
 
+.nav li.active{
+    background-color: brown;
+}
+
+.nav li:hover{
+    background-color: brown;
+}
