@@ -1,7 +1,14 @@
 const express = require('express');
 const pokemon = require('./models/pokemon.js');
-const app = express();
+var app = express();
 const port = 3000;
+
+const createEngine = require('jsx-view-engine').createEngine;
+module.exports.createEngine = createEngine;
+
+
+app.set('view engine', 'jsx');
+app.engine('jsx', require('jsx-view-engine').createEngine());
 
 
 app.get("/", (req, res) => {
@@ -10,7 +17,7 @@ app.get("/", (req, res) => {
 });
 
 app.get('/pokemon', (req, res) => {
-    res.send(pokemon);
+    res.render('Index');
   });
 
 app.listen(port, () => {
