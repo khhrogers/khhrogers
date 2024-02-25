@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @khhrogers
-- 👀 I’m interested in ...javascript.
+- 👀 I’m interested in ...javascript.React,Express,Node.JS,MongoDB
 - 🌱 I’m currently learning ...javascript
-- 💞️ I’m looking to collaborate on ...javascript.
+- 💞️ I’m looking to collaborate on web applications .
 - 📫 How to reach me ...khhrogers@gmail.com
 
 <!---
