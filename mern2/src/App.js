@@ -10,7 +10,7 @@ import NavBar from './components/Nav';
 
 export default function  App() {
 
-const [user, setUser] = useState(null);
+const [user, setUser] = useState();
  
     return (
       <main className="App">
