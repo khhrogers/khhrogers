@@ -16,7 +16,7 @@ const [user, setUser] = useState(getUser());
     return (
       <main className="App">
         { user ?
-           <> <NavBar user={user} />
+           <> <NavBar user={user} setUser={setUser} />
            
            
            
