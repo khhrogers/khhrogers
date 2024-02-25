@@ -6,16 +6,17 @@ import AuthPage from './pages/Auth'
 import {Routes, Route} from 'react-router-dom';
 import OrderHistoryPage from './pages/OrderHistory';
 import NavBar from './components/Nav';
+import {getUser} from './utilities/users-service'
 
 
 export default function  App() {
 
-const [user, setUser] = useState();
+const [user, setUser] = useState(getUser());
  
     return (
       <main className="App">
         { user ?
-           <> <NavBar />
+           <> <NavBar user={user} />
            
            
            
@@ -27,7 +28,7 @@ const [user, setUser] = useState();
 
             </> 
           :
-          <AuthPage />
+          <AuthPage setUser={setUser} />
         }
 
       </main>
