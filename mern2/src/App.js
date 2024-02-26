@@ -1,12 +1,12 @@
-
 import './App.css';
 import {useState} from 'react';
 import NewOrderPage from './pages/NewOrder';
 import AuthPage from './pages/Auth'
 import {Routes, Route} from 'react-router-dom';
 import OrderHistoryPage from './pages/OrderHistory';
-import NavBar from './components/Nav';
-import {getUser} from './utilities/users-service'
+import NavBar from './components/navbar'
+import {getUser} from './components/utilities/users-service'
+
 
 
 export default function  App() {
@@ -16,10 +16,9 @@ const [user, setUser] = useState(getUser());
     return (
       <main className="App">
         { user ?
-           <> <NavBar user={user} setUser={setUser} />
-           
-           
-           
+           <> 
+                   
+          <NavBar  user= {user} setUser={setUser}/>
                  
             <Routes>
               <Route path="/orders/new" element={<NewOrderPage />} />
@@ -34,5 +33,3 @@ const [user, setUser] = useState(getUser());
       </main>
     );
 }
-
-
