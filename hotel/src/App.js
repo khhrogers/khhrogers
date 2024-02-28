@@ -10,7 +10,7 @@ import SignUpForm from './components/SignUpForm/SignUpForm';
 
 function App() {
   
-  const [user, setUser ] = useState(null); // initialize user to null 
+  const [user, setUser ] = useState(true); // initialize user to null 
 
 
   

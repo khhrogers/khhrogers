@@ -27,11 +27,14 @@ try {
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
-
+console.log(advisoryInfo)
   return (
     <div>
       <h2>Travel Advisory Information for US</h2>
-      <pre>{JSON.stringify(advisoryInfo, null, 2)}</pre>
+      
+     <h1> {advisoryInfo.data.US.name}</h1>
+      
+      
     </div>
   );
 };
