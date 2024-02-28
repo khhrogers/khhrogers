@@ -3,6 +3,7 @@
 }
 
 body {
+  margin:0;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -33,6 +34,7 @@ body {
 .form {
   display: flex;
   flex-direction: column;
+  gap: 1.25vmin;
 }
 
 .input {
@@ -42,15 +44,19 @@ body {
   border-radius: 3px;
 }
 
-.button {
-  padding: 10px;
+.signup-button {
   background-color: #007bff;
-  color: #ffffff;
+  color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
+  margin-top: 20px;
 }
-
 .button:hover {
   background-color: #0056b3;
+}
+
+.form-group {
+  margin-bottom: 20px; /* Adjust the value as needed */
 }

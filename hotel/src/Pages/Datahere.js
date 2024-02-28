@@ -33,6 +33,7 @@ console.log(advisoryInfo)
       <h2>Travel Advisory Information for US</h2>
       
      <h1> {advisoryInfo.data.US.name}</h1>
+     <h1> {advisoryInfo.data.US.advisory.message} </h1>
       
       
     </div>
