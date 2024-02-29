@@ -11,6 +11,17 @@ export async function signUp(userData){
     return getUser();
 }
 
+export async function logIn(credentials){
+  const token = await usersAPI.logIn(credentials);
+  localStorage.setItem('token', token);
+
+  return getUser();
+}
+
+
+
+
+
 export function getToken() {
 // getItem returns null if there's no string
 const token = localStorage.getItem('token');

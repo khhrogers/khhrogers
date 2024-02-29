@@ -6,8 +6,8 @@ const usersCtrl = require('../../controllers/api/users')
 
 //pose/api/users
 
-router.post('/', usersCtrl.create);
+router.post('/', usersCtrl.create)
 
+router.post('/login', usersCtrl.logIn)
 
-
-module.exports = router;
+module.exports = router
