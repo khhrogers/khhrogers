@@ -14,11 +14,13 @@ export default function Navbar ({user, setUser}) {
    
    return (
 <nav>
-
+<h2> Welcome {user.name} </h2>
 <Link to="/travel">Search Hotel</Link>
+
+
       &nbsp; | &nbsp;
       <Link to="/travel/alert">Alerts</Link>
-      &nbsp;&nbsp;<span>Welcome, {user.name}</span>
+    
       &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
   </nav>
     );
