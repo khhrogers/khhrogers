@@ -2,8 +2,8 @@
 // this is the base path 
 
 // This is the base path of the Express route we'll define
-const BASE_URL = '/api/users'; // this is the prefeix of our url, thats how we access our data from the backend(api)
-// anything captiliaze like the bas is indicator it will be a constant 
+const BASE_URL = '/api/users'; 
+
 export async function signUp(userData) {
     console.log('we are using something',userData)
     // this userdata came from our component that got passed down 
