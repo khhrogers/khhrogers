@@ -6,11 +6,11 @@ import {Routes,Route} from 'react-router-dom';
 import Auth from './pages/Auth';
 import Hotels from './pages/Hotels';
 import Navbar from './components/navbar';
-import SignUpForm from './components/SignUpForm/SignUpForm';
+
 
 function App() {
   
-  const [user, setUser ] = useState(true); // initialize user to null 
+  const [user, setUser ] = useState(null); // initialize user to null 
 
 
   
@@ -19,8 +19,8 @@ function App() {
     { user ?
 
 <>
-<Navbar />
-<SignUpForm/>
+<Navbar user= {user} setUser={setUser} />
+
 <Routes>  
 
     <Route path="/travel/alert" element={<Datahere/>} />
@@ -30,7 +30,7 @@ function App() {
 
     </>  
     :
-      <Auth />
+      <Auth setUser={setUser} />
     }
     </main>
   );
