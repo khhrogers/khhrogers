@@ -7,7 +7,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background-color: #4ca5e0;
 }
 
 #root {
@@ -59,4 +59,11 @@ body {
 
 .form-group {
   margin-bottom: 20px; /* Adjust the value as needed */
+}
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px; 
 }

@@ -52,7 +52,7 @@ const LoginForm = ({setUser}) => {
             onChange={handleChange}
             required
           />
-          <button type="submit">LOGIN</button>
+          <button type="submit" className='signup-button'>LOGIN</button>
         </form>
       </div>
       <p className="error-message">&nbsp;{error}</p>

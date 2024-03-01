@@ -11,7 +11,9 @@ export default function Auth({ setUser }) {
     };
 
     return (
-        <main>
+       
+        <main className="auth-container">
+            
             {!loggedIn && (
                 <div>
                     <h3>LOG IN</h3>
@@ -21,6 +23,7 @@ export default function Auth({ setUser }) {
             <div>
                 <h3>SIGN UP</h3>
                 <SignUpForm setUser={setUser} />
+                <h1>BOOKING YOUR STAY AWAY</h1> {/* Add the heading */}
             </div>
         </main>
     );
