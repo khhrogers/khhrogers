@@ -19,7 +19,11 @@ const LoginForm = ({setUser}) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-    const user = await userService.logIn(credentials);
+   
+      const user = await userService.logIn(credentials);
+    
+    setUser(user);
+
     } catch (error) {
      
       setError("Login Failed - Try Again");
