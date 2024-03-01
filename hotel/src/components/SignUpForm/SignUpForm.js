@@ -7,9 +7,9 @@ const SignUpForm = ({setUser}) => {
         email: "",
         password: "",
         confirm: "",
-            })
+            });
 
-const [error, setError] =useState("")
+const [error, setError] =useState("");
     
 const handleChange = e => {
     const {name , value } = e.target 
@@ -31,7 +31,7 @@ const handleSubmit = async e => {
     }
 };
 
-const disable = formData.password !== formData.confirm;
+
 
 
 
