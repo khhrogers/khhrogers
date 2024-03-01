@@ -1,5 +1,6 @@
 # Welcome to the Hotel App. This app allows you 
-to create an account and log in to view hotels and check the travel adviosry before travelling. It has a simplistic view to server the purpose of displaying information. 
+to create an account and log in to view hotels and check the travel adviosry before travel.
+ It has a simplistic view to server the purpose of displaying information. 
 
 
 
