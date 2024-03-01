@@ -22,7 +22,7 @@ const LoginForm = ({setUser}) => {
    
       const user = await userService.logIn(credentials);
     
-    setUser(user);
+    setUser(user)
 
     } catch (error) {
      
