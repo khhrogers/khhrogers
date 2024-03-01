@@ -1,3 +1,8 @@
+# Welcome to the Hotel App. This app allows you to create an account and log in to view hotels and check the travel adviosry before travelling. It has a simplistic view to server the purpose of displaying information. 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
